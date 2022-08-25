@@ -1,19 +1,22 @@
 import React from "react"
-import { useState } from "react"
+import { useState, useRef } from "react"
 
 export default function Form(props) {
 
     const [memberList, setMemberList] = useState() 
-
+    
+    const form = useRef(null);
+    
     const handleSubmit = (e) =>{
         e.preventDefault()
         props.addMember(memberList)
+        form.current.reset();
     }
 
  return(
      <div>
       <h2>Ajouter un(e) Argonaute</h2>
-         <form onSubmit={handleSubmit} class="new-member-form">
+         <form ref={form} onSubmit={handleSubmit} class="new-member-form">
                   <label for="name">Nom de l&apos;Argonaute</label>
                   <input 
                   onChange={(e) => setMemberList(e.target.value)}

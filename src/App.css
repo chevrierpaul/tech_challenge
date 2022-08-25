@@ -59,7 +59,7 @@ input{
   outline: 0;
   padding: 5px;
   border: solid 4px black ;
-  background-color:  #f76c6c;
+  background-color:  ##f4f4f4;
   color:white;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
@@ -69,30 +69,21 @@ input{
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   background-color: #f76c6c;
-   
   border: 0;
   outline: 0;
   color: white;
   padding: 9px;
-   
+ 
 }
 .memberButton{
-  background-color: aqua;
+  background-color: #f76c6c;
+  border-radius: 20%;
 }
 
 .memberlist{
   border: solid 1px black;
-  display:flex;
-  flex-wrap:wrap;
-  flex-direction:row;
-  justify-content:flex-start;
-  align-items:stretch;
+  background-color: #f4f4f4;
+  border-radius: 10%;
+  width: 25%;
+
 }
-/* h4{
-  border: solid 1px black;
-  display: flex;
-  flex-wrap:wrap;
-  flex-direction:row;
-  justify-content:flex-start;
-  align-items:stretch;
-} */
