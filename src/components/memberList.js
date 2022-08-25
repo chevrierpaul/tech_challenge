@@ -1,12 +1,14 @@
-export default function MemberList(){
+export default function MemberList(props){
     return(
       <div>
-        <h2>Membres de l'équipage</h2>
-            <section class="member-list">
-               <div class="member-item">Eleftheria</div>
-               <div class="member-item">Gennadios</div>
-              <div class="member-item">Lysimachos</div>
-            </section>
+         {/* <section class="member-list"> </section>*/}
+         <div className="memberlist">
+          <h4>{props.text} </h4>
+           <button 
+           className="memberButton"
+           onClick={() => props.handleDelete(props.id)}>Supprimer</button> 
+         
+         </div>
         </div>
     )
 }
